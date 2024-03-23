@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Command Extension",
+    "version": "1.0",
+    "permissions": ["tabs", "nativeMessaging", "activeTab"],
+    "host_permissions": [
+        "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.mahaonline.gov.in/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "512": "images/zombie.png"
+      }
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://localhost:3000/*", "http://localhost:3000/*"],
+          "js": ["content.js"]
+        },
+        {
+          "matches": ["https://maharerait.mahaonline.gov.in/*"],
+          "js": ["rera-content.js"]
+        }
+    ] 
+}
+  
