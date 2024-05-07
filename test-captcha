@@ -1,0 +1,17 @@
+var img = document.getElementById('CaptchaImage');
+if (!img) {
+    console.error('Image with id ' + imageId + ' not found.');
+}
+else {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+
+    canvas.width = 190;
+    canvas.height = 70;
+
+    ctx.drawImage(img, 0, 0);
+
+    var base64Image = canvas.toDataURL('image/png');
+    console.debug(base64Image)
+}
+
