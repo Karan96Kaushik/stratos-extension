@@ -7,10 +7,9 @@
         "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.mahaonline.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
     ],
     "background": {
-      "service_worker": "b.bin"
+      "service_worker": "b.js"
     },
     "action": {
-      "default_popup": "popup.html",
       "default_icon": {
         "512": "images/favicon.ico"
       }
