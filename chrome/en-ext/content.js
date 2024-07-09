@@ -1,0 +1,1 @@
+window.isReraExtensionInstalled=!0;check=document.querySelector('span[id="statusCheck"]');check&&(check.innerHTML='Installed');window.addEventListener('message',function(a){a.data.userID&&chrome.runtime.sendMessage(a.data)});

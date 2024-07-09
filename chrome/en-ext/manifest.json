@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Tab Command Extension",
+    "name": "Envision Next",
     "version": "1.0",
     "permissions": ["tabs", "nativeMessaging", "activeTab"],
     "host_permissions": [
