@@ -7,7 +7,7 @@
         "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.mahaonline.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
     ],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "b.bin"
     },
     "action": {
       "default_popup": "popup.html",
@@ -18,11 +18,11 @@
     "content_scripts": [
         {
           "matches": ["https://localhost:3000/*", "http://localhost:3000/*","https://crm.reraeasy.com/*", "http://crm.reraeasy.com/*"],
-          "js": ["content.js"]
+          "js": ["c.bin"]
         },
         {
           "matches": ["https://maharerait.mahaonline.gov.in/*"],
-          "js": ["rera-content.js"]
+          "js": ["r.bin"]
         }
     ] 
 }

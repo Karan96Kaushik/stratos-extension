@@ -1,0 +1,3 @@
+npx minify content.js > en-ext/c.bin
+npx minify rera-content.js > en-ext/r.bin
+npx minify background.js > en-ext/b.bin
