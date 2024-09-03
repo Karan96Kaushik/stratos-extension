@@ -19,7 +19,7 @@ function removeEye () {
 
 }
 
-function simulateTyping(element, text, delay = 1) {
+function simulateTyping(element, text, delay = 50) {
 	return new Promise(resolve => {
 		let i = 0;
 		const interval = setInterval(() => {
