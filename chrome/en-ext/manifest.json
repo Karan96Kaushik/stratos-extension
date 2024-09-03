@@ -4,7 +4,7 @@
     "version": "1.0",
     "permissions": ["tabs", "nativeMessaging", "activeTab"],
     "host_permissions": [
-        "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.mahaonline.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
+        "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.maharashtra.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
     ],
     "background": {
       "service_worker": "b.js"
@@ -20,7 +20,7 @@
           "js": ["c.bin"]
         },
         {
-          "matches": ["https://maharerait.mahaonline.gov.in/*"],
+          "matches": ["https://maharerait.maharashtra.gov.in/*"],
           "js": ["r.bin"]
         }
     ] 
