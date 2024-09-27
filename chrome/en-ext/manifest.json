@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Envision Next",
-    "version": "1.0",
+    "version": "2.0.0",
     "permissions": ["tabs", "nativeMessaging", "activeTab"],
     "host_permissions": [
         "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.maharashtra.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
