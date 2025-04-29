@@ -16,12 +16,12 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://localhost:3000/*", "http://localhost:3000/*","https://crm.reraeasy.com/*", "http://crm.reraeasy.com/*"],
-          "js": ["c.bin"]
+          "matches": ["https://localhost:3000/*", "http://localhost:3000/*","https://crm.reraeasy.com/*", "http://crm.reraeasy.com/*", "https://crm.envisionnext.co.in/*", "http://crm.envisionnext.co.in/*"],
+          "js": ["c.js"]
         },
         {
           "matches": ["https://maharerait.maharashtra.gov.in/*"],
-          "js": ["r.bin"]
+          "js": ["r.js"]
         }
     ] 
 }

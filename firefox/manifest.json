@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Teams Presence",
+    "version": "1.0",
+  
+    "description": "Teams Presence",
+    "permissions": [
+        "*://teams.microsoft.com/*",
+        "https://presence.teams.microsoft.com/"
+    ],
+    
+    "icons": {
+      "48": "icons/zombie.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "icons/favicon.ico"
+        }
+     },
+     
+    "content_scripts": [
+      {
+        "matches": ["*://teams.microsoft.com/*"],
+        "js": ["teamsPresence.js"]
+      }
+    ]
+  }
+  
