@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Envision Next",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": ["tabs", "nativeMessaging", "activeTab"],
     "host_permissions": [
         "http://localhost:3000/*","https://localhost:3000/*","https://maharerait.mahaonline.gov.in/*","http://crm.reraeasy.com/*","https://crm.reraeasy.com/*"
@@ -16,12 +16,12 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://localhost:3000/*", "http://localhost:3000/*","https://crm.reraeasy.com/*", "http://crm.reraeasy.com/*"],
-          "js": ["c.bin"]
+          "matches": ["https://localhost:3000/*", "http://localhost:3000/*","https://crm.reraeasy.com/*", "http://crm.reraeasy.com/*", "https://crm.envisionnext.co.in/*", "http://crm.envisionnext.co.in/*"],
+          "js": ["c.js"]
         },
         {
           "matches": ["https://maharerait.mahaonline.gov.in/*"],
-          "js": ["r.bin"]
+          "js": ["r.js"]
         }
     ] 
 }
