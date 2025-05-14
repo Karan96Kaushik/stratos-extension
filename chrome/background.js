@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
-    if (request.version === 'v1') {
+    if (request.version === 'v1' || !request.version) {
         chrome.tabs.create({url: 'https://maharerait.mahaonline.gov.in/Login/LogOff'}, function(tab) {
             chrome.tabs.onUpdated.addListener(function listener(tabId, changeInfo, updatedTab) {
                 if (tabId === tab.id && changeInfo.status === 'complete') {
