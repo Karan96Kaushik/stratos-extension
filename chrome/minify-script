@@ -1,3 +1,4 @@
 npx minify content.js > en-ext/c.js
 npx minify rera-content.js > en-ext/r.js
+npx minify rera-content-v2.js > en-ext/rv2.js
 npx minify background.js > en-ext/b.js
